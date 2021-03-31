@@ -479,9 +479,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"my-linked-package@portal:/Users/noah/repos/yarn-repro-linking-non-pnp/yarn1-nm-project/my-linked-package::locator=yarn2-pnp-project%40workspace%3A.":
+"my-linked-package@portal:../yarn1-nm-project/my-linked-package::locator=yarn2-pnp-project%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "my-linked-package@portal:/Users/noah/repos/yarn-repro-linking-non-pnp/yarn1-nm-project/my-linked-package::locator=yarn2-pnp-project%40workspace%3A."
+  resolution: "my-linked-package@portal:../yarn1-nm-project/my-linked-package::locator=yarn2-pnp-project%40workspace%3A."
   peerDependencies:
     react: ~16.8.0
     react-dom: ~16.8.0

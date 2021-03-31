@@ -9,7 +9,7 @@
     "webpack": "^5.28.0"
   },
   "resolutions": {
-    "my-linked-package": "portal:/Users/noah/repos/yarn-repro-linking-non-pnp/yarn1-nm-project/my-linked-package"
+    "my-linked-package": "portal:../yarn1-nm-project/my-linked-package"
   },
   "scripts": {
     "build": "node build.js"

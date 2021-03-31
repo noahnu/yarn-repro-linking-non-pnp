@@ -1,13 +1,5 @@
 # yarn-repro-linking-non-pnp
 
-Modify `yarn2-pnp-project`'s package.json and update the absolute path to the yarn1-nm-project, that is change this line:
-
-```
-"my-linked-package": "portal:/Users/noah/repos/yarn-repro-linking-non-pnp/yarn1-nm-project/my-linked-package"
-```
-
-and then run yarn from within yarn2-pnp-project.
-
 ```
 cd yarn2-pnp-project && yarn node index.js
 ```
