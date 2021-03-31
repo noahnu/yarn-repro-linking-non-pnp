@@ -1,4 +1,7 @@
-const ReactDOM = require('react-dom')
-const LinkedPackage = require('my-linked-package')
+const resolve = require('enhanced-resolve')
 
-console.log(ReactDOM === LinkedPackage)
+const resolvedNM = resolve.sync('../yarn1-nm-project/my-linked-package', 'react-dom')
+const resolvedPnp = resolve.sync(__filename, 'react-dom')
+
+console.log('Linked Package:', resolvedNM)
+console.log('Root Project', resolvedPnp)

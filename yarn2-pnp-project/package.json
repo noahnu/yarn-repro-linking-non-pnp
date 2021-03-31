@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
+    "enhanced-resolve": "^5.7.0",
     "my-linked-package": "*",
     "react": "~16.8.0",
-    "react-dom": "~16.8.0",
-    "webpack": "^5.28.0"
+    "react-dom": "~16.8.0"
   },
   "resolutions": {
     "my-linked-package": "portal:../yarn1-nm-project/my-linked-package"
   },
   "scripts": {
-    "build": "node build.js"
+    "test": "node index.js"
   }
 }
