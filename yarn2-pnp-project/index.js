@@ -1,7 +1,9 @@
+const assert = require('assert')
 const resolve = require('enhanced-resolve')
 
-const resolvedNM = resolve.sync('../yarn1-nm-project/my-linked-package', 'react-dom')
-const resolvedPnp = resolve.sync(__filename, 'react-dom')
-
-console.log('Linked Package:', resolvedNM)
-console.log('Root Project', resolvedPnp)
+assert.equal(
+  resolve.sync(require.resolve("my-linked-package"), "react-dom"),
+  require.resolve("react-dom", {
+    paths: [require.resolve("my-linked-package")],
+  })
+)
