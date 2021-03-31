@@ -1,0 +1,11 @@
+{
+  "name": "yarn1-nm-project",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "workspaces": ["my-linked-package"],
+  "dependencies": {
+    "react": "~16.8.0",
+    "react-dom": "~16.8.0"
+  }
+}
