@@ -1,4 +1,9 @@
-const ReactDOM = require('react-dom')
-const LinkedPackage = require('my-linked-package')
+const assert = require('assert')
+const resolve = require('enhanced-resolve')
 
-console.log(ReactDOM === LinkedPackage)
+assert.equal(
+  resolve.sync(require.resolve("my-linked-package"), "react-dom"),
+  require.resolve("react-dom", {
+    paths: [require.resolve("my-linked-package")],
+  })
+)
